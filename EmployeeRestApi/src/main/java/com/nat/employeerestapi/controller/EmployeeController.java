@@ -44,7 +44,7 @@ public class EmployeeController {
 	@PostMapping
 	public ResponseEntity<?> addEmployee(@RequestBody Employee employee,UriComponentsBuilder uriComponentsBuilder,HttpServletRequest request) {
 	
-		Employee employee2 = employeeService.AddEmployee(employee);
+		Employee employee2 = employeeService.addEmployee(employee);
 		UriComponents uriComponents = uriComponentsBuilder
 				.path(request.getRequestURI()+"/{id}")
 				.buildAndExpand(employee2.getId());

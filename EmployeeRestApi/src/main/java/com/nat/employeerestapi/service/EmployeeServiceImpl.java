@@ -16,7 +16,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	EmployeeRepository employeeRepository;
 	
 	@Override
-	public Employee AddEmployee(Employee employee) {
+	public Employee addEmployee(Employee employee) {
 		// TODO Auto-generated method stub
 		Employee employee2 = null;
 		try {

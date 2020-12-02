@@ -8,7 +8,7 @@ import com.nat.employeerestapi.model.Employee;
 
 
 public interface EmployeeService {
-	public Employee AddEmployee(Employee employee);
+	public Employee addEmployee(Employee employee);
 	public Optional<Employee> getEmployeeById(long id);
 	public void deleteEmployee(long id);
 	public Optional<java.util.List<Employee>> getEmployees();
